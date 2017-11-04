@@ -11,7 +11,7 @@ angular.module("lacc", ['ui.router'])
 			controller: "loginController"
         })
 		.state('register', {
-            url: '/register',
+            url: '/register/:type',
             templateUrl: './templates/register.html',
 			controller: "loginController"
         });
