@@ -1,3 +1,4 @@
+<h3> Student Form </h3>
 <div ng-show="studentform.$invalid" class="text-danger">Incomplete</div>
 <div ng-show="studentform.$valid" class="text-success">Complete</div>
 
@@ -47,9 +48,6 @@
       <textarea class="form-control" ng-model="user.HonorSociety" id="HonorSociety" rows="3" placeholder="Enter Honor Societies"></textarea>
   </div>
 
-      
-      
-    <button type="submit" class="btn btn-primary" ng-click="add()">Submit</button>
   <div>
     <label for="Visual Art Files">Visual Art Files</label>
      <input required type="file" filechange class="form-control-file" multiple ng-model="visualArtsFile" />
@@ -89,8 +87,7 @@
       <label for="Atheletics">List atheletic achievements</label>
       <textarea class="form-control" ng-model="user.atheletics" id="atheletics" rows="5" placeholder="Enter Atheletics Achievements"></textarea>
   </div>
-
-
+      
 	<div>
 		<button class="btn btn-primary" ng-click="save()">Save</button>
 	</div>
