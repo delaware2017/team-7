@@ -20,6 +20,10 @@ angular.module("lacc", ['ui.router'])
         	templateUrl: './templates/homepage.html',
         	controller: "homepageController"
         })
+        .state('firstpage',{
+        	url: '/firstpage',
+        	templateUrl: './templates/firstpage.html'
+        })
 
         ;
 }])
