@@ -8,7 +8,15 @@ angular.module("lacc")
 		var password = $scope.user.password;
 		firebase.auth().signInWithEmailAndPassword(email, password)
 		.then(function(data) {
-			console.log(data);
+			$rootScope.user = data;
+			database().ref('users/' + data.uid)
+			.on('value', function(snapshot) {
+			  var user_type = (snapshot.val() && snapshot.val().user_type);
+			  console.log(user_type);
+			})
+			.catch(function(err) {
+				console.error(err);
+			});
 		})
 		.catch(function(error) {
 		  // Handle Errors here.
