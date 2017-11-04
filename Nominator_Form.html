@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<header>Student Information</header>
+
+<body>
+
+<p>Please input the student information:</p>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+</form>
+
+<form id="frm1" action="/action_page.php">
+  Student Email: <input type="text" name="fname"><br>
+  Student Phone: <input type="text" name="lname"><br><br>
+</form>
+
+<form action="/action_page.php" method="get">
+  <input type="checkbox" name="Hispanic?" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle" value="Car" checked> I have a car<br>
+  <input type="submit" value="Submit">
+</form>
+
+<form id="frm1" action="/action_page.php">
+  Hispanic: <input type="text" name="fname"><br>
+  Last name: <input type="text" name="lname"><br><br>
+</form>
+
+
+<select>
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="opel">Opel</option>
+  <option value="audi">Audi</option>
+</select>
+
+<script>
+function getInput() {
+    document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
