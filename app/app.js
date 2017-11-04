@@ -7,7 +7,7 @@ angular.module("lacc", ['ui.router'])
     $stateProvider
         .state('login', {
             url: '/',
-            templateUrl: './login.html',
+            templateUrl: './templates/login.html',
         });
 }])
 
