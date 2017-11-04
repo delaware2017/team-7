@@ -19,6 +19,7 @@ angular.module("lacc")
 			}, function (errorObject) {
 			  console.log("The read failed: " + errorObject.code);
 			  $scope.invalid = true;
+			  // <div ng-show="invalid">Incorrect username or password</div>
 			});
 
 		})
