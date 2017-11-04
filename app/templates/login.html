@@ -1,4 +1,4 @@
-<form ng-submit="login()">
+<form>
   <div class="form-group">
     <label for="exampleInputEmail1">Email address</label>
     <input ng-model="user.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -14,5 +14,6 @@
       Check me out
     </label>
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button ng-click="login()" type="submit" class="btn btn-primary">Log In</button>
+  <button ng-click="signup()" class="btn btn-primary">Register</button>
 </form>

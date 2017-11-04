@@ -24,6 +24,22 @@ angular.module("lacc", ['ui.router'])
 		var username = $scope.user.email;
 		var password = $scope.user.password;
 		console.log(username, password);
+		console.log(firebase);
+	};
+
+	$scope.signup = function() {
+		var email = $scope.user.email;
+		var password = $scope.user.password;
+		firebase.auth().createUserWithEmailAndPassword(email, password)
+		.then(function() {
+			console.log("done");
+		})
+		.catch(function(error) {
+			// Handle Errors here.
+			var errorCode = error.code;
+			var errorMessage = error.message;
+			// ...
+		});
 	};
 }])
 ;
