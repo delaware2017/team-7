@@ -1,5 +1,6 @@
 <header>Student Information</header>
 <body>
+
 <p>Please input the student information:</p>
 
 <!--
@@ -15,50 +16,63 @@
 </form>
 -->
 
-<form>
-	<div class="form-group">
-		<label for="firstname">First Name</label>
-		<input type="text" ng-model="user.firstname" class="form-control" id="firstname" placeholder="firstname">
-	</div>
-	<div>
-		<label for="lastname">Last Name</label>
-		<input type="text" ng-model="user.lastname" class="form-control" id="lastname" placeholder="lastname">
-	</div>
-</form>
-
-<form>
-	<div class="checkbox">
-		<label>
-			<input type="checkbox" ng-model="user.ethnicity" id="yes_hispanic" value="yes"> Yes
-			<input type="checkbox" id="not_hispanic" value="no"> No
-		</label>
-	</div>
-</form>
-
+<!--
 <form action="/action_page.php" method="get">
 	Is this student Hispanic: <br>
  	<input type="checkbox" name="yes" value="yes_hispanic"> Yes<br>
  	<input type="checkbox" name="no" value="not_hispanic"> No<br><br>
 </form>
+-->
+
+<form>
+	<div class="form-group">
+		<label for="firstname">First Name</label>
+		<input type="text" ng-model="user.firstname" class="form-control" id="firstname">
+	</div>
+	<div class="form-group">
+		<label for="lastname">Last Name</label>
+		<input type="text" ng-model="user.lastname" class="form-control" id="lastname">
+	</div>
+</form>
+
+<form>
+	Is this student Hispanic:
+	<div class="radio">
+		<label>
+			<input type="radio" ng-model="user.ethnicity" id="yes_hispanic"> Yes
+		</label>
+	<div>
+	</div>
+		<label>
+			<input type="radio" ng-model="user.ethnicity" id="not_hispanic"> No
+		</label>
+	</div>
+</form>
 
 <p>Award Categories:</p>
-<select>
+<select class="form-control">
 	Select all that apply:
-	<option value="academics">Academic Excellence</option>
-	<option value="arts">the Arts</option>
-	<option value="athletics">Athletics</option>	
-	<option value="stem">Science Technology Engineering and Math</option>
-	<option value="community">School/Community Service</option>
+	<option ng-model="user.catAcademic" id="academic">Academic Excellence</option>
+	<option ng-model="user.catArts" id="arts">Arts</option>
+	<option ng-model="user.catAthletics" id="athletics">Athletics</option>	
+	<option ng-model="user.catStem" id="stem">Science Technology Engineering and Math</option>
+	<option ng-model="user.catCommunity" id="community">School/Community Service</option>
 </select>
 
 <p>School Information:</p>
-<form id="frm1" action="/action_page.php">
-	State:
-	<input type="text" name="school"><br>
-	District:
-	<input type="text" name="school"><br>
-	Name: <!-- Try to have a drop down menu -->
-	<input type="text" name="school"><br>
+<form>
+	<div class="form-group">
+		State:
+		<input type="text" ng-model="user.schoolstate" class="form-control" id="schoolstate">
+	</div>
+	<div class="form-group">
+		District:
+		<input type="text" ng-model="user.schooldistrict" class="form-control" id="schooldistrict">
+	</div>
+	<div class="form-group">
+		Name:
+		<input type="text" ng-model="user.schoolname" class="form-control" id="schoolname">
+	</div>
 </form>
 
 <script>
