@@ -18,16 +18,5 @@
     <label for="exampleInputPassword1">Password</label>
     <input ng-model="user.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
-
-  // DELETE FROM HERE d
-  <div class="form-check">
-	  <select ng-model="user.user_type" class="form-control">
-	    <option value="nominees">Nominee</option>
-		<option value="judges">Judge</option>
-		<option value="students">Student</option>
-	  </select>
-  </div>
-  TO HERE //
-
-  <button ng-click="signup()" class="btn btn-primary">Register</button>
+    <button ng-click="signup()" class="btn btn-primary">Register</button>
 </form>
