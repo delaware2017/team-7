@@ -4,18 +4,26 @@
 <html>
     
         <title>Hispanic Student Recognition Program</title>
-        
+      
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
     
     <body>
+        <center>
         <h4>Welcome to LACC</h4>
         <br>
-        <a href="./templates/login.html">Login</a>
-        <a href="./templates/register.html">Register</a>
+        <button type="button" class="btn"><a ui-sref="login">Login</a></button>
+        <button type="button" class="btn"><a ui-sref="register({type: 'judge'})">Register as a Judge</a></button>
         
-        <br>
+        <br><br><br>
                 
-        <img src="./templates/lacc.jpg" height="200">        
+        <img src="./templates/lacc.jpg" height="200">  
+        </center>
         
         
     </body>

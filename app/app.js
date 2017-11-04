@@ -2,7 +2,7 @@ angular.module("lacc", ['ui.router'])
 
 .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
-        .otherwise('/login');
+        .otherwise('/homepage');
 
     $stateProvider
         .state('login', {
