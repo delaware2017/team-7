@@ -23,15 +23,17 @@ angular.module("lacc")
 .directive('filechange', ["$parse", function($parse) {
 	return function(scope, element, attrs) {
 		element.bind('change', function() {
-			var f = element.files[0];
-			var r = new FileReader();
-			r.onloadend = function(e) {
-				var data = e.target.result;
-				//send your binary data via $http or $resource or do anything else with it
-				console.log(data);
-				r.readAsBinaryString(f);
-			};
+			var files = element[0].files;
+			Array.from(files).forEach(function(f) {
+				var r = new FileReader();
+				r.onloadend = function(e) {
+					var data = e.target.result;
+					//send your binary data via $http or $resource or do anything else with it
+					console.log(data);
+				};
 
+				r.readAsBinaryString(f);
+			});
 		});
 	};
 }])
