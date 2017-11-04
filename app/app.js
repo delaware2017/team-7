@@ -24,6 +24,12 @@ angular.module("lacc", ['ui.router'])
         	url: '/firstpage',
         	templateUrl: './templates/firstpage.html'
         })
+           .state('firstpage',{
+        	url: '/firstpage',
+        	templateUrl: './templates/firstpage.html'
+        })
+
+
 
         ;
 }])
