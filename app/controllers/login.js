@@ -8,7 +8,15 @@ angular.module("lacc")
 		var password = $scope.user.password;
 		firebase.auth().signInWithEmailAndPassword(email, password)
 		.then(function(data) {
-			console.log(data);
+			$rootScope.user = data;
+			database().ref('users/' + data.uid)
+			.on('value', function(snapshot) {
+			  var user_type = (snapshot.val() && snapshot.val().user_type);
+			  console.log(user_type);
+			})
+			.catch(function(err) {
+				console.error(err);
+			});
 		})
 		.catch(function(error) {
 		  // Handle Errors here.
@@ -23,11 +31,24 @@ angular.module("lacc")
 
 	$scope.signup = function() {
 		var email = $scope.user.email;
+		var firstname = $scope.user.firstname || "Test";
+		var lastname = $scope.user.lastname || "Last";
 		var password = $scope.user.password;
 		var user_type = $stateParams.type ?  $stateParams.type+"s" : $scope.user.user_type;
 		firebase.auth().createUserWithEmailAndPassword(email, password)
 			.then(function() {
-				database.ref('user_types/' + user_type).push(email);
+				var userId = firebase.auth().currentUser.uid;
+				return database.ref().child("users/" +userId).set({
+					firstname: firstname,
+					email: email,
+					lastname: lastname,
+					user_type: user_type
+				})
+				.catch(function(err) {
+					console.error(err);
+				});
+			})
+			.then(function() {
 				console.log("done");
 			})
 			.catch(function(error) {
@@ -40,3 +61,14 @@ angular.module("lacc")
 }])
 
 ;
+
+
+///
+var nominees = {
+	student: []
+};
+
+var student = {
+	profile: 'sdfs',
+	profile_status: 'asdf'
+};

@@ -14,7 +14,18 @@ angular.module("lacc", ['ui.router'])
             url: '/register/:type',
             templateUrl: './templates/register.html',
 			controller: "loginController"
-        });
+        })
+        .state('homepage',{
+        	url: '/homepage',
+        	templateUrl: './templates/homepage.html',
+        	controller: "homepageController"
+        })
+        .state('firstpage',{
+        	url: '/firstpage',
+        	templateUrl: './templates/firstpage.html'
+        })
+
+        ;
 }])
 
 .run(['$rootScope', function($rootScope) {
