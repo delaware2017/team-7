@@ -12,7 +12,7 @@
 
 <div class="container">
   <h2>Academic Rubric</h2>
-  <table class="table table-hover">
+  <table class="table table-hover"  id="studentRubric">
     <thead>
       <tr>
       	<th>   </th>
@@ -104,19 +104,21 @@
 </div>
 <script type="text/javascript">
 window.sumInputs = function() {
-    var arr = document.getElementById('score'),
+    var arr = document.getElementById('score1'),
         result = document.getElementById('totalScore'),
         sum = 0;            
     for(var i= 0; i< arr.length; i++) {
         var ip = arr[i];
-        tot += parseInt(ip.value);
+        sum += parseInt(ip.value);
         }
-
+        result.value = sum;
+        $("#totalScore").val($("#studentRubric tr").length);
     }
 
-    result.value = sum;
-    console.log(result.value);
-}
+
+    
+    //console.log(result.value);
+
 /*function findTotal(){
     var arr = document.getElementById('score');
     var tot=0;
