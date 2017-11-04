@@ -1,0 +1,34 @@
+<button ui-sref="academicrubric" target="_blank">View rubric</button>
+<!-- for for grading the students -->
+<table>
+	<tr>
+		<td>Description</td>
+		<td>Student</td>
+		<td>Score</td>
+	</tr>
+	<tr>
+		<td>GPA</td>
+		<td>{{ student.profile.gpa }}</td>
+		<td>{{ student.score.gpa }}</td>
+	</tr>
+	<tr>
+		<td>Rank</td>
+		<td>{{ student.profile.classRank }}</td>
+		<td>{{ student.score.classRank }}</td>
+	</tr>
+	<tr>
+		<td>Number of AP Classes Taken</td>
+		<td>{{ student.profile.classesTaken }}</td>
+		<td>{{ student.score.classesTaken }}</td>
+	</tr>
+	<tr>
+		<td>Number of AP Classes Taken</td>
+		<td>{{ student.profile.honorsClassesTaken }}</td>
+		<td>{{ student.score.honorsClassesTaken }}</td>
+	</tr>
+	<tr>
+		<td>Number of AP Classes Taken</td>
+		<td>{{ student.profile.sat }}</td>
+		<td>{{ student.score.sat }}</td>
+	</tr>
+</table>

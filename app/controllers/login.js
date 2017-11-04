@@ -1,7 +1,7 @@
 var database = firebase.database();
 
 angular.module("lacc")
-
+// When the user logs in it adds them to the database
 .controller('loginController', ['$scope', "$state", "$rootScope", "$stateParams", function($scope, $state, $rootScope, $stateParams) {
     $scope.login = function() {
 		var email = $scope.user.email;
@@ -18,7 +18,12 @@ angular.module("lacc")
 			  $rootScope.people = info;
 			  $rootScope.userData = info[data.uid];
 
-			  $state.go("dashboard");
+			  if($rootScope.userData.user_type === "judges")
+				  $state.go("dashboard");
+			  else if($rootScope.userData.user_type === "nominees")
+				  $state.go("studentForm");
+			  else
+				  $state.go("Nominator_Form");
 			}, function (errorObject) {
 			  console.log("The read failed: " + errorObject.code);
 			  $scope.invalid = true;
@@ -36,28 +41,37 @@ angular.module("lacc")
 	};
 
 	$scope.signupType = $stateParams.type;
-
+	// for first time users who do not have an account
 	$scope.signup = function() {
 		var email = $scope.user.email;
 		var firstname = $scope.user.firstname || "Test";
 		var lastname = $scope.user.lastname || "Last";
 		var password = $scope.user.password;
+		var info;
 		var user_type = $stateParams.type ?  $stateParams.type+"s" : $scope.user.user_type;
 		firebase.auth().createUserWithEmailAndPassword(email, password)
 			.then(function() {
 				var userId = firebase.auth().currentUser.uid;
-				return database.ref().child("users/" +userId).set({
+				info = {
 					firstname: firstname,
 					email: email,
 					lastname: lastname,
 					user_type: user_type
-				})
+				};
+				return database.ref().child("users/" +userId).set(info)
 				.catch(function(err) {
 					console.error(err);
 				});
 			})
 			.then(function() {
 				console.log("done");
+				$rootScope.people = info;
+				if(info.user_type === "judges")
+					$state.go("dashboard");
+				else if(info.user_type === "nominees")
+					$state.go("studentForm");
+				else
+					$state.go("Nominator_Form");
 			})
 			.catch(function(error) {
 				// Handle Errors here.
