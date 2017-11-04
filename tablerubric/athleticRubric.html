@@ -62,10 +62,26 @@
 		<td><input type="text" class="form-control" id="score"></td>
     </tbody>
   </table>
-  <div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+  <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control" id="totalScore">
 </div>
 <script type="text/javascript">
-function findTotal(){
+window.sumInputs = function() {
+    var inputs = document.getElementsById('score'),
+        result = document.getElementById('totalScore'),
+        sum = 0;            
+
+    for(var i=0; i<inputs.length; i++) {
+        var ip = inputs[i];
+
+        if (ip.name && ip.name.indexOf("totalScore") < 0) {
+            sum += parseInt(ip.value) || 0;
+        }
+
+    }
+
+    result.value = total;
+}
+/*function findTotal(){
     var arr = document.getElementsById('score');
     var tot=0;
     for(var i=0;i<arr.length;i++){
@@ -73,7 +89,7 @@ function findTotal(){
             tot += parseInt(arr[i].value);
     }
     document.getElementById('totalScore').value = tot;
-}
+}*/
 
     </script>
 </body>
