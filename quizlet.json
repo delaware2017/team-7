@@ -1,0 +1,57 @@
+[
+    {
+        "word": "GEN",
+        "def": "birth, class, kin",
+        "examples": "generation"
+    },
+    {
+        "word": "GRAD, GRESS",
+        "def": "step",
+        "examples": "gradual, egress"
+    },
+    {
+        "word": "GRAPH, GRAM",
+        "def": "writing",
+        "examples": "biography, epigram"
+    },
+    {
+        "word": "GRAT",
+        "def": "pleasing",
+        "examples": "gratitude"
+    },
+    {
+        "word": "GRAV, GRIEV",
+        "def": "heavy",
+        "examples": "gravity, grievous"
+    },
+    {
+        "word": "GREG",
+        "def": "crowd, flock",
+        "examples": "segregate"
+    },
+    {
+        "word": "IN, IG, IL, IM, IR",
+        "def": "not",
+        "examples": "insomnia, ignorant, illicit, immaculate, irregular"
+    },
+    {
+        "word": "IN, IL, IM, IR",
+        "def": "in, on, into",
+        "examples": "invade, illustrate, immerse, irritate"
+    },
+    {
+        "word": "INTER",
+        "def": "between, among",
+        "examples": "intercept"
+    },
+    {
+        "word": "INTRA, INTR",
+        "def": "within",
+        "examples": "intrastate, intrinsic"
+    },
+    {
+        "word": "IT, ITER",
+        "def": "between, among",
+        "examples": "transit, reiterate"
+    }
+]

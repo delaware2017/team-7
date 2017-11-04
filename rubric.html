@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>STEM Rubric</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>STEM Rubric</h2>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+	<th></th>
+        <th>STEM Criteria</th>
+        <th>0 <br /> Does Not Meet Expectations</th>
+        <th>1 <br /> Minimally Meets Expectations</th>
+	<th>2 <br /> Meets Expectations</th>
+	<th>3 <br /> Exceeds Expectations</th>
+	<th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Number of AP classes taken in STEM-related courses</td>
+        <td>Has not taken STEM AP courses</td>
+	<td>1 STEM AP class</td>
+	<td>2 STEM AP classes</td>
+	<td>3 or more STEM AP classes</td>
+	<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Number of honors classes taken in STEM-related courses</td>
+        <td>Has not taken honors classes</td>
+        <td>1 honors class</td>
+        <td>2 honors classes</td>
+        <td>3 or more honors classes</td>
+        <td><input type="text" class="form-control" id="score"></textarea></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>AP and honors grades in STEM-realted courses</td>
+        <td>Has not taken STEM classes</td>
+        <td>Has a B average (81-87%)</td>
+        <td>Has  B+ average (88-91%)</td>
+        <td>Has an A average</td>
+        <td><input type="text" class="form-control" id="score"></textarea></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Discretionary Points:
+Assign 0 – 3 additional
+points based on
+support materials such
+as science projects,
+Computer Aided Design
+(CAD) architectural
+drawings, awards, etc.</td>
+        <td>0</td>      
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td></td>
+	<td><input type="text" class="form-control" id="score"></textarea></td>
+      </tr>
+    </tbody>
+  </table>
+<div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+</div>
+
+</body>
+</html>
