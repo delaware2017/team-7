@@ -4,50 +4,26 @@
 <html>
     
         <title>Hispanic Student Recognition Program</title>
-        
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'> </script>
-        <script src='script.js'></script>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333333;
-            }
-            li {    
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 16px;
-                text-decoration: none;
-            }
-            li a:hover {
-                background-color: #111111;
-            }
-        </style>
+      
+    
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    
     
     <body>
-        <title>Hispanic Student Recognition Program</title>
-        <h4>Brought to you by the Latin American Community Center</h4>
+        <center>
+        <h4>Welcome to LACC</h4>
+        <br>
+        <button type="button" class="btn"><a ui-sref="login">Login</a></button>
+        <button type="button" class="btn"><a ui-sref="register({type: 'judge'})">Register as a Judge</a></button>
+        
+        <br><br><br>
                 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="./templates/about.html">About</a></li>
-            <li><a href="./templates/login.html">Login</a></li>
-            <li><a href="./templates/register.html">Register</a></li>
-        </ul>
-        
-        <br>
-        <img src="./templates/lacc.jpg" height="200">
-        <br>
-        
-        <a href="./templates/Nominator_Form.html">Nominator Form</a>
-        <a href="./templates/Nominee_form.html">Nominee Form</a>
+        <img src="./templates/lacc.jpg" height="200">  
+        </center>
         
         
     </body>

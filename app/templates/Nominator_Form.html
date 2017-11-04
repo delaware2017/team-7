@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html>
-
 <header>Student Information</header>
 <body>
 <p>Please input the student information:</p>
 
+<!--
 <form id="frm1" action="/action_page.php">
 	First name: <br>
   	<input type="text" name="fname"><br>
@@ -14,6 +12,27 @@
   	<input type="text" name="email"><br>
   	Student Phone: <br>
   	<input type="text" name="phone"><br><br>
+</form>
+-->
+
+<form>
+	<div class="form-group">
+		<label for="firstname">First Name</label>
+		<input type="text" ng-model="user.firstname" class="form-control" id="firstname" placeholder="firstname">
+	</div>
+	<div>
+		<label for="lastname">Last Name</label>
+		<input type="text" ng-model="user.lastname" class="form-control" id="lastname" placeholder="lastname">
+	</div>
+</form>
+
+<form>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" ng-model="user.ethnicity" id="yes_hispanic" value="yes"> Yes
+			<input type="checkbox" id="not_hispanic" value="no"> No
+		</label>
+	</div>
 </form>
 
 <form action="/action_page.php" method="get">
@@ -49,4 +68,3 @@ function getInput() {
 </script>
 
 </body>
-</html>
