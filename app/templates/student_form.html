@@ -1,24 +1,9 @@
-<div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Personal Statement</label>
-    <textarea class="form-control" ng-model="user.personalStatement" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Text Here"></textarea>
-  </div>
+<h2>Student Form</h2>  
 
-  <form>
-
-    <label for="Resume">Resume</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.resume">
-    <button type="submit" class="btn btn-primary" ng-click="add()">Submit</button>
-  </div>
-
-  <div class="form-group">
-    <label for="gpa">Enter GPA</label>
-    <input type="text" ng-model="user.gpa" class="form-control" id="gpa">
-  </div>
 
 <div class="form-group">
-    <label for="exampleFormControlTextarea1">Classes Taken</label>
-    <textarea class="form-control" ng-model="user.classesTaken" id="exampleClassesTaken" rows="5" placeholder="Enter Courses"></textarea>
+    <label for="GPA">Enter GPA:</label>
+      <input type="text" name="GPA" placeholder="#.##">
 </div>
 
 <div class="form-group">
@@ -26,8 +11,22 @@
     <input type="text" ng-model="user.sat" class="form-control" id="sat">
 </div>
 
-<div>
-	hello worlds
+<div class="form-group">
+    <label for="Courses Taken">Courses Taken:</label>
+        <textarea class="form-control" ng-model="user.classesTaken" id="exampleClassesTaken" rows="5" placeholder="Enter Courses"></textarea>
 </div>
 
+<div class="form-group">
+    <label for="personalstatement">Personal Statement</label>
+    <textarea class="form-control" ng-model="user.personalStatement" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Text Here"></textarea>
+  </div>
+
+<div>
+    <label for="Resume">Resume</label>
+    <input type="file" class="form-control-file filereader" ng-model="user.resume">
 </div>
+<br>
+<br>
+    
+    
+<button type="submit" class="btn btn-primary" ng-click="add()">Submit</button>

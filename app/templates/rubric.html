@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>STEM Rubric</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-
+<div>
 <div class="container">
   <h2>STEM Rubric</h2>
   <table class="table table-hover">
@@ -63,35 +52,17 @@
       </tr>
     </tbody>
   </table>
-  <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control" id="totalScore">
+ <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control1" id="totalScore">
 </div>
 <script type="text/javascript">
 window.sumInputs = function() {
-    var inputs = document.getElementsById('score'),
-        result = document.getElementById('totalScore'),
-        sum = 0;            
-
-    for(var i=0; i<inputs.length; i++) {
-        var ip = inputs[i];
-
-        if (ip.name && ip.name.indexOf("totalScore") < 0) {
-            sum += parseInt(ip.value) || 0;
-        }
-
-    }
-
-    result.value = total;
-}
-/*function findTotal(){
-    var arr = document.getElementsById('score');
-    var tot=0;
-    for(var i=0;i<arr.length;i++){
-        if(parseInt(arr[i].value))
-            tot += parseInt(arr[i].value);
-    }
-    document.getElementById('totalScore').value = tot;
-}*/
-
+    var result = document.getElementById('totalScore');
+    var sum = 0;
+    $('.form-control').each (function() {
+        var q = ($(this).val());
+        sum  = sum + parseInt(q);  
+      })
+    result.value = (sum);
+  }
     </script>
-</body>
-</html>
+</div>
