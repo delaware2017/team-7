@@ -20,9 +20,10 @@ angular.module("lacc", ['ui.router'])
         	templateUrl: './templates/homepage.html',
         	controller: "homepageController"
         })
-        .state('firstpage',{
-        	url: '/firstpage',
-        	templateUrl: './templates/firstpage.html'
+        .state('Nominator_Form',{
+        	url: '/Nominator_Form',
+        	templateUrl: './templates/Nominator_Form.html',
+            controller: 'nominatorController'
         })
 	.state('grader', {
 	url: '/graderpage',
