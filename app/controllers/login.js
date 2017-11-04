@@ -14,9 +14,10 @@ angular.module("lacc")
 			ref.on("value", function(snapshot) {
 			  var info = snapshot.val();
 			  $rootScope.userData = info[data.uid];
-
+			  $state.go("homepage");
 			}, function (errorObject) {
 			  console.log("The read failed: " + errorObject.code);
+			  $scope.invalid = true;
 			});
 
 		})
