@@ -1,4 +1,4 @@
-angular.module("lacc", ['ui.router'])
+angular.module("lacc", ['ui.router', 'angularFileUpload'])
 
 .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider

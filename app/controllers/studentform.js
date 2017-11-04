@@ -7,12 +7,8 @@ angular.module("lacc")
 	    r.onloadend = function(e) {
 	      var data = e.target.result;
 	      //send your binary data via $http or $resource or do anything else with it
-
-	    r.readAsBinaryString(f);
+		  console.log(data);
+		    r.readAsBinaryString(f);
 		};
-	};
-
-	$scope.save = function() {
-		console.log($scope.user);
 	};
 }]);
