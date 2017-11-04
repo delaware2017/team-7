@@ -1,4 +1,4 @@
-var storageRef = firebase.storage().ref();
+
 
 angular.module("lacc")
 
@@ -8,17 +8,11 @@ angular.module("lacc")
 	function($scope, $rootScope) {
 		var files = {};
 
-		$scope.addFile = function(fileName) {
-			var f = $('.filereader')[0].files[0],
-				r = new FileReader();
+		var userId = $rootScope.user.uid;
 
-			r.onloadend = function(e) {
-				var data = e.target.result;
-				//send your binary data via $http or $resource or do anything else with it
-				console.log(data);
-				r.readAsBinaryString(f);
-			};
-		};
+		var storageRef = firebase.storage().ref(userId);
+
+
 	}
 ])
 
@@ -35,6 +29,7 @@ angular.module("lacc")
 					console.log(data);
 				};
 
+				var ref = storageRef.child()
 				ref.put(file).then(function(snapshot) {
 				  console.log('Uploaded a blob or file!');
 				});
