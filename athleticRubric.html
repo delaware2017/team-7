@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Athletic Rubric</h2>
+  <p>The .table-hover class enables a hover state on table rows:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      	<th>   </th>
+        <th>Athletics Criteria</th>
+        <th>0 <br/> Does Not Meet Expectations</th>
+        <th>1 <br/> Minimally Meets Expectations</th>
+        <th>2 <br/> Meets Expectations</th>
+        <th>3 <br/> Exceeds Expectations</th>
+        <th> Score </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Number of ATHLETIC TEAMS / number of sports participated in and outside of school</td>
+        <td>Has not participated on any ATHLETIC sports / teams</td>
+        <td>1 sport / team</td>
+        <td>2 sports / teams</td>
+        <td>3 or more sports / teams</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>2/td>
+        <td>Grades in ATHLETICS-related courses</td>
+        <td>Has not taken ATHLETICS-related courses</td>
+        <td>Has a B average (81-87%)</td>
+        <td>Has a B+ average (88-91%)</td>
+        <td>Has an A average (92% or higher)</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Athletic Honors or Awards</td>
+        <td>No evidence of honors or awards</td>
+        <td>Documentation or anecdotal evidence of 1 honor or award (does not include participation award)</td>
+        <td>Documentation or anecdotal evidence of 2 honors or awards (does not include participation award)</td>
+        <td>Documentation or anecdotal evidence of 3 honors or awards (does not include participation award)</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>Discretionary Points: Assign 0 – 3 additional points based on support materials such <br/>as Awards, certificates of participation, accolades and letters of recommendations from coaches, <br/>newspaper clippings, pictures of trophies, etc.</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+		<td><input type="text" class="form-control" id="score"></td>
+    </tbody>
+  </table>
+  <div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+</div>
+
+</body>
+</html>

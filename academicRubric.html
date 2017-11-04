@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Academica Rubric</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -102,6 +102,18 @@
     </tbody>
   </table>
   <div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+<script type="text/javascript">
+function findTotal(){
+    var arr = document.getElementsById('score');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    document.getElementById('totalScore').value = tot;
+}
+
+    </script>
 </div>
 
 </body>
