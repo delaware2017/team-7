@@ -20,10 +20,12 @@ angular.module("lacc", ['ui.router'])
         	templateUrl: './templates/homepage.html',
         	controller: "homepageController"
         })
-        .state('firstpage',{
-        	url: '/firstpage',
-        	templateUrl: './templates/firstpage.html'
+        .state('Nominator_Form',{
+        	url: '/Nominator_Form',
+        	templateUrl: './templates/Nominator_Form.html',
+            controller: 'nominatorController'
         })
+<<<<<<< HEAD
            .state('firstpage',{
         	url: '/firstpage',
         	templateUrl: './templates/firstpage.html'
@@ -31,6 +33,13 @@ angular.module("lacc", ['ui.router'])
 
 
 
+=======
+	.state('grader', {
+	url: '/graderpage',
+	templateUrl: './templates/grader.html',
+	controller: "graderController"
+})
+>>>>>>> 8870968a82bea7a94ad581d477958eb6e7dd4165
         ;
 }])
 
