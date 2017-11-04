@@ -23,17 +23,24 @@ angular.module("lacc")
 
 	$scope.signup = function() {
 		var email = $scope.user.email;
-		var firstname = $scope.user.firstname;
-		var lastname = $scope.user.lastname;
+		var firstname = $scope.user.firstname || "Test";
+		var lastname = $scope.user.lastname || "Last";
 		var password = $scope.user.password;
 		var user_type = $stateParams.type ?  $stateParams.type+"s" : $scope.user.user_type;
 		firebase.auth().createUserWithEmailAndPassword(email, password)
 			.then(function() {
-				database.ref('users/' + email).set({
+				var userId = firebase.auth().currentUser.uid;
+				return database.ref().child("users/" +userId).set({
 					firstname: firstname,
+					email: email,
 					lastname: lastname,
 					user_type: user_type
+				})
+				.catch(function(err) {
+					console.error(err);
 				});
+			})
+			.then(function() {
 				console.log("done");
 			})
 			.catch(function(error) {
