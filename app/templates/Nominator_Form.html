@@ -39,13 +39,13 @@
 	Is this student Hispanic:
 <div class="form-check">
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
+    <input class="form-check-input" type="radio" name="exampleRadios" ng-model="user.ethnicity" id="exampleRadios1" value="option1">
     Yes
   </label>
 </div>
 <div class="form-check">
   <label class="form-check-label">
-    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+    <input class="form-check-input" type="radio" name="exampleRadios" ng-model="user.ethnicity" id="exampleRadios2" value="option2">
     No
   </label>
 </div>
@@ -57,7 +57,7 @@
 	<option value="" disabled selected>Select your option</option>
 	<option ng-model="user.catAcademic" id="academic">Academic Excellence</option>
 	<option ng-model="user.catArts" id="arts">Arts</option>
-	<option ng-model="user.catAthletics" id="athletics">Athletics</option>	
+	<option ng-model="user.catAthletics" id="athletics">Athletics</option>
 	<option ng-model="user.catStem" id="stem">Science Technology Engineering and Math</option>
 	<option ng-model="user.catCommunity" id="community">School/Community Service</option>
 </select>
