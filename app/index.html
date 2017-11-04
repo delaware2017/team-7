@@ -1,5 +1,7 @@
 <html ng-app="lacc">
-
+<!-- 
+	This page provides the head for each page 
+-->
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +13,10 @@
 
 <body ng-controller="main">
 
+
+<!-- 
+	This is where our templates go 
+-->
 	<ui-view>
 
 		<!-- SCRIPTS -->
@@ -30,6 +36,9 @@
 		  };
 		  firebase.initializeApp(config);
 		</script>
+		<!-- 
+			Templates 
+		-->
 		<script src="app.js"></script>
 		<script src="./controllers/login.js"></script>
 		<script src="./controllers/homepage.js"></script>
