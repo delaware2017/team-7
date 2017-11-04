@@ -1,6 +1,6 @@
 angular.module("lacc")
 
-.controller("dashboardController", ["$scope", "$rootScope", function($scope, $rootScope) {
+.controller("dashboardController", ["$scope", "$rootScope", "$timeout", function($scope, $rootScope, $timeout) {
 
 
 	var ref = database.ref("users");
@@ -15,8 +15,12 @@ angular.module("lacc")
 		  }
 	  }
 	  console.log(userss);
-	  $rootScope.listofusers = info;
-	  $scope.$apply();
+
+	  $timeout(function() {
+		  $scope.listofusers = userss;
+	  }, 0);
+
+	  $rootScope.people = info;
 	}, function (errorObject) {
 	  console.log("The read failed: " + errorObject.code);
 	  $scope.invalid = true;

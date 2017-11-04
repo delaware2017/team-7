@@ -1,6 +1,6 @@
-<button ui-sref="academicrubric" target="_blank">View rubric</button>
-<!-- for for grading the students -->
-<table>
+<button type="button" class="btn btn-primary" ui-sref="academicRubric">View rubric</button>
+
+<table class="table">
 	<tr>
 		<td>Description</td>
 		<td>Student</td>
@@ -8,27 +8,28 @@
 	</tr>
 	<tr>
 		<td>GPA</td>
-		<td>{{ student.profile.gpa }}</td>
-		<td>{{ student.score.gpa }}</td>
+		<td>3.0</td>
+		<td>3</td>
 	</tr>
 	<tr>
 		<td>Rank</td>
-		<td>{{ student.profile.classRank }}</td>
-		<td>{{ student.score.classRank }}</td>
+		<td>Top 10%</td>
+		<td>3</td>
 	</tr>
 	<tr>
 		<td>Number of AP Classes Taken</td>
-		<td>{{ student.profile.classesTaken }}</td>
-		<td>{{ student.score.classesTaken }}</td>
+		<td>2</td>
+		<td>2</td>
 	</tr>
 	<tr>
-		<td>Number of AP Classes Taken</td>
-		<td>{{ student.profile.honorsClassesTaken }}</td>
-		<td>{{ student.score.honorsClassesTaken }}</td>
-	</tr>
-	<tr>
-		<td>Number of AP Classes Taken</td>
-		<td>{{ student.profile.sat }}</td>
-		<td>{{ student.score.sat }}</td>
+		<td>Total Score</td>
+		<td></td>
+		<td>8</td>
 	</tr>
 </table>
+<div>
+			<button type="button" class="btn btn-primary" ui-sref="academicRubric">Academic Rubric</button>
+      <button type="button" class="btn btn-primary" ui-sref="artsRubric">Arts Rubric</button>
+      <button type="button" class="btn btn-primary" ui-sref="STEMRubric">STEM Rubric</button>
+<button type="button" class="btn btn-primary" ui-sref="athleticRubric">Athletic Rubric</button>
+		</div>
