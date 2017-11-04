@@ -21,10 +21,19 @@ angular.module("lacc", ['ui.router'])
 
 .controller('loginController', ['$scope', "$state", "$rootScope", function($scope, $state, $rootScope) {
     $scope.login = function() {
-		var username = $scope.user.email;
+		var email = $scope.user.email;
 		var password = $scope.user.password;
-		console.log(username, password);
-		console.log(firebase);
+		firebase.auth().signInWithEmailAndPassword(email, password)
+		.then(function(data) {
+			console.log(data);
+		})
+		.catch(function(error) {
+		  // Handle Errors here.
+		  var errorCode = error.code;
+		  var errorMessage = error.message;
+		  // ...
+		});
+
 	};
 
 	$scope.signup = function() {
