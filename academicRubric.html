@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Academic Rubric</h2>
+  <p>The .table-hover class enables a hover state on table rows:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      	<th>   </th>
+        <th>Academic Criteria</th>
+        <th>0 <br/> Does Not Meet Expectations</th>
+        <th>1 <br/> Minimally Meets Expectations</th>
+        <th>2 <br/> Meets Expectations</th>
+        <th>3 <br/> Exceeds Expectations</th>
+        <th> Score </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1a</td>
+        <td>Evaluate student achievement based on UNWEIGHTED cumulative GPA</td>
+        <td>Below the minimum unweighted 3.5 GPA required</td>
+        <td>Has minimum unweighted 3.5 GPA required</td>
+        <td>Has an unweighted GPA of 3.75-3.90</td>
+        <td>Has an unweighted GPA of 3.91 or above</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>1b</td>
+        <td>If unweighted GPA is unavailable, evaluate WEIGHTED GPA</td>
+        <td>Has the minimum weighted 3.5 GPA required</td>
+        <td>Has minimum unweighted 3.5 GPA required</td>
+        <td>Has a weighted GPA of 3.91 to 4.0</td>
+        <td>Has a weighted GPA above 4.0</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>2a</td>
+        <td>Evaluate student achievement based on UNWEIGHTED class rank</td>
+        <td>Ranks in top 15% of the class</td>
+        <td>Ranks in top 10% of the class</td>
+        <td>Ranks in top 5% of the class</td>
+        <td>Ranks in top 3% of the class</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>2b</td>
+        <td>If unweighted class rank is unavailable, evaluate WEIGHTED class rank</td>
+        <td>Ranks in top 10% of the class</td>
+        <td>Ranks in top 5% of the class</td>
+        <td>Ranks in top 3% of the class</td>
+        <td>Ranks in top 1% of the class</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Number of AP classes taken (refer to transcripts)</td>
+        <td>Does not currently take AP classes</td>
+        <td>Takes 1 AP class</td>
+        <td>Takes 2 AP classes</td>
+        <td>Takes 3 or more AP Classes</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+      	<td>4</td>
+        <td>Number of honors classes taken (refer to transcripts)</td>
+        <td>Does not currently take AP classes</td>
+        <td>Takes 1 honors class</td>
+        <td>Takes 2 honors classes</td>
+        <td>Takes 3 or more honors Classes</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+      	<td>5</td>
+        <td>AP and honors courses overall grades</td>
+        <td>Does not currently take AP or honors courses</td>
+        <td>Has a B average (81-87%)</td>
+        <td>Has a B+ average (88-91%)</td>
+        <td>Has an A average (92% or higher)</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+      	<td>6</td>
+        <td>Discretionary Points: Assign 0 – 3 additional points based on support<br/>materials such as standardized test scores, honor society membership, academic<br/>awards, etc.</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+     
+    </tbody>
+  </table>
+  <div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+</div>
+
+</body>
+</html>
