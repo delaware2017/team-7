@@ -1,6 +1,6 @@
 <div>
   <div class="form-group">
-    <label for="exampleFormControlTextarea1">Personal Statement</label>
+    <label for="personalStatement">Personal Statement</label>
     <textarea class="form-control" ng-model="user.personalStatement" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Text Here"></textarea>
   </div>
 
@@ -16,18 +16,32 @@
     <input type="text" ng-model="user.gpa" class="form-control" id="gpa">
   </div>
 
-<div class="form-group">
-    <label for="exampleFormControlTextarea1">Classes Taken</label>
-    <textarea class="form-control" ng-model="user.classesTaken" id="exampleClassesTaken" rows="5" placeholder="Enter Courses"></textarea>
-</div>
+  <div class="form-group">
+    <label for="Class Rank">Enter Class Rank</label>
+    <input type="text" ng-model="user.classRank" class="form-control" id="classRank">
+  </div>
 
-<div class="form-group">
-    <label for="sat">Enter SAT score</label>
-    <input type="text" ng-model="user.sat" class="form-control" id="sat">
-</div>
+  <div class="form-group">
+      <label for="classesTaken">Classes Taken</label>
+      <textarea class="form-control" ng-model="user.classesTaken" id="exampleClassesTaken" rows="5" placeholder="Enter Courses"></textarea>
+  </div>
 
-<div>
-	hello worlds
-</div>
+  <div class="form-group">
+      <label for="sat">Enter SAT score</label>
+      <input type="text" ng-model="user.sat" class="form-control" id="sat">
+  </div>
+
+  <div class="form-group">
+      <label for="Academic Awards">Academic Awards</label>
+      <textarea class="form-control" ng-model="user.academicAwards" id="academicAwards" rows="3" placeholder="Enter Awards"></textarea>
+  </div>
+
+  <div class="form-group">
+      <label for="HonorSociety">Honor Society Memberships</label>
+      <textarea class="form-control" ng-model="user.HonorSociety" id="HonorSociety" rows="3" placeholder="Enter Honor Societies"></textarea>
+  </div>
+
+
+
 
 </div>
