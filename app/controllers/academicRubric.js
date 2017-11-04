@@ -1,6 +1,8 @@
 var database = firebase.database();
 
 angular.module("lacc")
-.controller("graderController", ["$scope", "$rootScope", function($scope, $rootScope) {
-//	$scope.people = $rootScope.people;
+.controller("graderrController", ["$scope", "$rootScope", "$stateParams", function($scope, $rootScope, $stateParams) {
+	var userid = $stateParams.id;
+	var data = $rootScope.listofusers[userid];
+	$scope.student = data;
 }]);

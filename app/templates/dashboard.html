@@ -6,7 +6,7 @@
 		<th>Category</th>
 		<th>Score</th>
 	</tr>
-	<tr ng-repeat="user in listofusers" ui-sref="">
+	<tr ng-repeat="user in listofusers" ui-sref="ratestudent({id: user.id})">
 		<td>{{user.firstname + " " + user.lastname }}</td>
 		<td>{{user.category || "no category"}}</td>
 		<td>{{user.score || "unscored"}}</td>

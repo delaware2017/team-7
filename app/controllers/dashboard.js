@@ -1,6 +1,6 @@
 angular.module("lacc")
 
-.controller("dashboardController", ["$scope", function($scope) {
+.controller("dashboardController", ["$scope", "$rootScope", function($scope, $rootScope) {
 
 
 	var ref = database.ref("users");
@@ -9,11 +9,13 @@ angular.module("lacc")
 	  var info = snapshot.val();
 	  var userss = [];
 	  for(var user in info) {
-		  if(info[user].user_type == "students")
-		  	userss.push(info[user]);
+		  if(info[user].user_type == "students") {
+			  info[user].id = user;
+			  userss.push(info[user]);
+		  }
 	  }
 	  console.log(userss);
-	  $scope.listofusers = userss;
+	  $rootScope.listofusers = userss;
 	  $scope.$apply();
 	}, function (errorObject) {
 	  console.log("The read failed: " + errorObject.code);
