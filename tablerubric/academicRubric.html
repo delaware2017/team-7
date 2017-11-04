@@ -104,43 +104,14 @@
 </div>
 <script type="text/javascript">
 window.sumInputs = function() {
-    var scores = document.getElementById('score');
     var result = document.getElementById('totalScore');
     var sum = 0;
-    var arr = [];
     $('.form-control').each (function() {
         var q = ($(this).val());
-        sum  = sum + parseInt(q);
-        console.log(sum);
-      })}
-        //console.log(arr);
-        //console.log(arr[1]);
-        //console.log(parseInt(arr[1]));
-      //});
-      /*
-    for(var i= 0; i<= arr.length; i++) {
-        sum = sum + (arr[i]);
-        }
-        console.log(sum);
-        //result.value = (sum);
-        //$("#totalScore").val($("#studentRubric tr").length);
-    }
-    */
-
-
-    
-    //console.log(result.value);
-
-/*function findTotal(){
-    var arr = document.getElementById('score');
-    var tot=0;
-    for(var i=0;i<arr.length;i++){
-        if(parseInt(arr[i].value))
-            tot += parseInt(arr[i].value);
-    }
-    document.getElementById('totalScore').value = tot;
-}*/
-
+        sum  = sum + parseInt(q);  
+      })
+    result.value = (sum);
+  }
     </script>
 
 </body>
