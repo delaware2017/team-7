@@ -49,6 +49,11 @@ angular.module("lacc", ['ui.router'])
                         templateUrl: './templates/academicRubric.html',
                         controller: "academicRubricController"
                 })
+    .state('dashboard', {
+                        url: '/dashboard',
+                        templateUrl: './templates/dashboard.html',
+                        controller: "dashboardController"
+                })
 		;
 }])
 
