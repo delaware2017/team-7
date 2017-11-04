@@ -46,12 +46,12 @@
 
   <div>
     <label for="Visual Art Files">Visual Art Files</label>
-     <input type="file" uploader="uploader" multiple  />
+     <input type="file" ng-change="addFile()" multiple  />
   <div>
 
   <div>
     <label for="Performing Art Files">Performing Art Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.performingArtFile">
+    <input type="file" filechange class="form-control-file filereader" ng-model="performingArtFile">
   </div>
 
    <div class="form-group">
