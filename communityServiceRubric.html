@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Academica Rubric</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Community Service Rubric</h2>
+  <p>The .table-hover class enables a hover state on table rows:</p>            
+  <table class="table table-hover">
+    <thead>
+      <tr>
+      	<th>   </th>
+        <th>Community Service / Volunteerism</th>
+        <th>0 <br/> Does Not Meet Expectations</th>
+        <th>1 <br/> Minimally Meets Expectations</th>
+        <th>2 <br/> Meets Expectations</th>
+        <th>3 <br/> Exceeds Expectations</th>
+        <th> Score </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td>Number of community service / volunteer hours completed</td>
+        <td>0-25 hours of community service / volunteering documented</td>
+        <td>26-75 hours of community service / volunteering documented</td>
+        <td>76-150 hours of community service / volunteering documented</td>
+        <td>More than 151 hours of community service / volunteering documented</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Reason for Involvemen</td>
+        <td>Volunteer because required</td>
+        <td>Indicates interest beyond what is required</td>
+        <td>Shows a clear purpose or direction for volunteering</td>
+        <td>Demonstrates strong passion and dedication to achieve community impact</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>Discretionary Points: Assign 0 – 3 additional points based on support materials such as Awards, certificates of participation, accolades and letters of recommendations, newspaper clippings, pictures of trophies, etc.</td>
+        <td>0</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+		<td><input type="text" class="form-control" id="score"></td>
+      </tr>
+     
+    </tbody>
+  </table>
+  <div>Total Score: <input type="text" class="form-control" id="totalScore"> </div>
+<script type="text/javascript">
+function findTotal(){
+    var arr = document.getElementsById('score');
+    var tot=0;
+    for(var i=0;i<arr.length;i++){
+        if(parseInt(arr[i].value))
+            tot += parseInt(arr[i].value);
+    }
+    document.getElementById('totalScore').value = tot;
+}
+
+    </script>
+</div>
+
+</body>
+</html>
