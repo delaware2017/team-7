@@ -16,7 +16,7 @@ angular.module("lacc")
 			  var info = snapshot.val();
 			  $rootScope.people = info;
 			  $rootScope.userData = info[data.uid];
-			  $state.go("homepage");
+			  $state.go("dashboard");
 			}, function (errorObject) {
 			  console.log("The read failed: " + errorObject.code);
 			  $scope.invalid = true;
