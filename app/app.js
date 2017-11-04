@@ -34,6 +34,11 @@ angular.module("lacc", ['ui.router'])
 			templateUrl: './templates/grader.html',
 			controller: "graderController"
 		})
+		.state('studentForm', {
+			url: '/studentform',
+			templateUrl: './templates/student_form.html',
+			controller: "studentFormController"
+		})
 		;
 }])
 
