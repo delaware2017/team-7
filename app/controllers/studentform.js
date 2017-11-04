@@ -10,6 +10,7 @@ angular.module("lacc")
 
 		$scope.save = function(){
 			console.log($scope.user);
+			var x = {"personalStatement":"gg","gpa":"4","classRank":"4","classesTaken":"g","honorsClassesTaken":"g","sat":"2200","academicAwards":"g","HonorSociety":"g","performingArtLink":"g","ScienceTechnologyAwards":"g","communityService":"g","atheletics":"g"};
 		}
 
 		$scope.addFile = function(fileName) {
@@ -30,6 +31,7 @@ angular.module("lacc")
 	return function(scope, element, attrs) {
 		element.bind('change', function() {
 			var files = element[0].files;
+			var fileName = attrs.ngModel;
 			Array.from(files).forEach(function(f) {
 				var r = new FileReader();
 				r.onloadend = function(e) {
@@ -39,6 +41,10 @@ angular.module("lacc")
 					console.log(data);
 				};
 
+<<<<<<< HEAD
+=======
+				var ref = storageRef.child(fileName);
+>>>>>>> 2bd3629308f765c5f4229cf2ad50c2ea48425d7d
 				ref.put(file).then(function(snapshot) {
 				  console.log('Uploaded a blob or file!');
 				});
