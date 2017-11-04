@@ -32,7 +32,7 @@
         <td>Has minimum unweighted 3.5 GPA required</td>
         <td>Has an unweighted GPA of 3.75-3.90</td>
         <td>Has an unweighted GPA of 3.91 or above</td>
-		<td><input type="text" class="form-control" id="score"></td>
+		<td><input type="text" class="form-control" id="score1"></td>
       </tr>
       <tr>
         <td>1b</td>
@@ -100,13 +100,16 @@
      
     </tbody>
   </table>
-  <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control" id="totalScore">
+  <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control1" id="totalScore">
 </div>
 <script type="text/javascript">
 window.sumInputs = function() {
-    var arr = document.getElementById('score1'),
-        result = document.getElementById('totalScore'),
-        sum = 0;            
+    var scores = document.getElementById('score');
+    var result = document.getElementById('totalScore');
+    var sum = 0;
+    var arr = [];
+    $('.form-control').each (function() {
+        arr.push($(this).parseInt(val()));});
     for(var i= 0; i< arr.length; i++) {
         var ip = arr[i];
         sum += parseInt(ip.value);
