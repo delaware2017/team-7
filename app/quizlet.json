@@ -1,0 +1,758 @@
+{
+    "TACIT,TIC": {
+        "def": "silent",
+        "examples": "tacit, reticent"
+    },
+    "TACT,TAG,TANG": {
+        "def": "touch",
+        "examples": "tact, contagious, tangent"
+    },
+    "TEN,TIN,TAIN": {
+        "def": "hold, twist",
+        "examples": "detention, retinue, detain"
+    },
+    "TEND,TENS,TENT": {
+        "def": "stretch",
+        "examples": "distend, tension, contentious"
+    },
+    "TERM": {
+        "def": "end",
+        "examples": "terminate"
+    },
+    "TERR": {
+        "def": "earth, land",
+        "examples": "terrain"
+    },
+    "TEST": {
+        "def": "witness",
+        "examples": "testimonial"
+    },
+    "THE": {
+        "def": "god",
+        "examples": "atheist"
+    },
+    "THERM": {
+        "def": "heat",
+        "examples": "thermometer"
+    },
+    "TIM": {
+        "def": "fear, frightened",
+        "examples": "timid"
+    },
+    "TOP": {
+        "def": "place",
+        "examples": "utopia"
+    },
+    "TORP": {
+        "def": "stiff, numb",
+        "examples": "torpid"
+    },
+    "TOX": {
+        "def": "poison",
+        "examples": "toxic"
+    },
+    "TRACT": {
+        "def": "draw",
+        "examples": "protract"
+    },
+    "TRANS": {
+        "def": "across, over, through, beyond",
+        "examples": "transitory"
+    },
+    "TREM,TREP": {
+        "def": "shake",
+        "examples": "tremor, intrepid"
+    },
+    "TURB": {
+        "def": "shake",
+        "examples": "turbulent"
+    },
+    "TORT": {
+        "def": "twist",
+        "examples": "distort"
+    },
+    "DIA": {
+        "def": "across",
+        "examples": "diagonal"
+    },
+    "DIC,DICT": {
+        "def": "speak",
+        "examples": "abdicate, diction"
+    },
+    "DIS,DIF,DI": {
+        "def": "not, apart, away",
+        "examples": "disband, diffuse, divert"
+    },
+    "DOC,DOCT": {
+        "def": "teach",
+        "examples": "docile, doctrine"
+    },
+    "DOL": {
+        "def": "pain",
+        "examples": "condolence"
+    },
+    "DUC,DUCT": {
+        "def": "lead",
+        "examples": "seduce, conduct"
+    },
+    "FAC,FIC,FECT,FY,FEA": {
+        "def": "make, do",
+        "examples": "factory, fiction, affect, rectify, feasible"
+    },
+    "FAL,FALS": {
+        "def": "decieve",
+        "examples": "fallacious, false"
+    },
+    "FERV": {
+        "def": "boil",
+        "examples": "fervent"
+    },
+    "FID": {
+        "def": "faith",
+        "examples": "confident"
+    },
+    "FLU,FLUX": {
+        "def": "flow",
+        "examples": "fluent, influx"
+    },
+    "FORE": {
+        "def": "before",
+        "examples": "foreboding"
+    },
+    "FRAG,FRAC": {
+        "def": "break",
+        "examples": "fragment, fracture"
+    },
+    "FUS": {
+        "def": "pour",
+        "examples": "effusive"
+    },
+    "HABIT,HIBIT": {
+        "def": "have, hold",
+        "examples": "cohabit, inhibit"
+    },
+    "HAP": {
+        "def": "by chance",
+        "examples": "mishap"
+    },
+    "HELIO,HELI": {
+        "def": "sun",
+        "examples": "heliocentric, helium"
+    },
+    "HETERO": {
+        "def": "other",
+        "examples": "heterosexual"
+    },
+    "HOL": {
+        "def": "whole",
+        "examples": "catholic"
+    },
+    "HOMO": {
+        "def": "same",
+        "examples": "homosexual"
+    },
+    "HOMO(2ND)": {
+        "def": "man",
+        "examples": "homo sapiens"
+    },
+    "HYDR": {
+        "def": "water",
+        "examples": "hydrophobic"
+    },
+    "HYPER": {
+        "def": "too much, excess",
+        "examples": "hyperactive"
+    },
+    "HYPO": {
+        "def": "too little, under",
+        "examples": "hypothermia"
+    },
+    "JECT,JET": {
+        "def": "throw",
+        "examples": "trajectory, jettison"
+    },
+    "JOUR": {
+        "def": "day",
+        "examples": "adjour"
+    },
+    "JUD": {
+        "def": "judge",
+        "examples": "judicious"
+    },
+    "JUNCT,JUG": {
+        "def": "join",
+        "examples": "injunction, conjugate"
+    },
+    "JUR": {
+        "def": "swear, law",
+        "examples": "jurisdiction"
+    },
+    "NAT,NASC": {
+        "def": "born",
+        "examples": "native, nascent"
+    },
+    "NAU,NAV": {
+        "def": "ship, sailor",
+        "examples": "nautical, naval"
+    },
+    "NEG": {
+        "def": "not, deny",
+        "examples": "abnegate"
+    },
+    "NEO": {
+        "def": "new",
+        "examples": "neonate"
+    },
+    "NIHIL": {
+        "def": "none, nothing",
+        "examples": "annihilation"
+    },
+    "NOM,NYM": {
+        "def": "name",
+        "examples": "nominate, anonymity"
+    },
+    "NOV": {
+        "def": "new",
+        "examples": "novelty"
+    },
+    "NOX,NIC,NEC,NOC": {
+        "def": "harm",
+        "examples": "obnoxious, tyrannic, internecine, innocuous"
+    },
+    "NUMER": {
+        "def": "number",
+        "examples": "numeral"
+    },
+    "RADI,RAMI": {
+        "def": "branch",
+        "examples": "radiate, ramification"
+    },
+    "RECT,REG": {
+        "def": "straight, rule",
+        "examples": "rectify, regulate"
+    },
+    "REG": {
+        "def": "king, rule",
+        "examples": "regal"
+    },
+    "RETRO": {
+        "def": "backward",
+        "examples": "retrospective"
+    },
+    "RID,RIS": {
+        "def": "laugh",
+        "examples": "deride, derision"
+    },
+    "ROG": {
+        "def": "ask",
+        "examples": "interrogate"
+    },
+    "RUD": {
+        "def": "rough, crude",
+        "examples": "rudimentary"
+    },
+    "RUPT": {
+        "def": "break",
+        "examples": "rupture"
+    },
+    "MACRO": {
+        "def": "great",
+        "examples": "macrocosm"
+    },
+    "MAG,MAJ,MAS,MAX": {
+        "def": "great",
+        "examples": "magnify, majesty, master, maximum"
+    },
+    "MAL": {
+        "def": "bad",
+        "examples": "maleficent"
+    },
+    "MAN": {
+        "def": "hand",
+        "examples": "manifest"
+    },
+    "MAR": {
+        "def": "sea",
+        "examples": "marine"
+    },
+    "MATER,MATR": {
+        "def": "mother",
+        "examples": "maternal, matron"
+    },
+    "MEDI": {
+        "def": "middle",
+        "examples": "mediate"
+    },
+    "MEGA": {
+        "def": "great",
+        "examples": "megaphone"
+    },
+    "MEM,MEN": {
+        "def": "remember",
+        "examples": "memorabilia, lament"
+    },
+    "METER,METR,MENS": {
+        "def": "measure",
+        "examples": "meter, metric, commensurate"
+    },
+    "MICRO": {
+        "def": "small",
+        "examples": "microscope"
+    },
+    "MIS": {
+        "def": "wrong, bad, hate",
+        "examples": "mishap"
+    },
+    "MIT,MISS": {
+        "def": "send",
+        "examples": "emit, missive"
+    },
+    "MOLL": {
+        "def": "soft",
+        "examples": "mollusk"
+    },
+    "MON,MONIT": {
+        "def": "warn",
+        "examples": "monitor, premonition"
+    },
+    "MONO": {
+        "def": "one",
+        "examples": "monologue"
+    },
+    "MOR": {
+        "def": "custom, manner",
+        "examples": "mores"
+    },
+    "MOR,MORT": {
+        "def": "dead",
+        "examples": "morbid, mortal"
+    },
+    "MORPH": {
+        "def": "shape",
+        "examples": "metamorphosis"
+    },
+    "MOV,MOT,MOB,MOM": {
+        "def": "move",
+        "examples": "immovable, locomotion, immobilize, momentum"
+    },
+    "MUT": {
+        "def": "change",
+        "examples": "mutate"
+    },
+    "QUAD,QUAR,QUAT": {
+        "def": "four",
+        "examples": "quadrant, quarantine, quatrain"
+    },
+    "QUES,QUER,QUIS,QUIR": {
+        "def": "question",
+        "examples": "inquest, query, inquisitive, inquiry"
+    },
+    "QUIE": {
+        "def": "quiet",
+        "examples": "disquiet"
+    },
+    "QUINT,QUIN": {
+        "def": "five",
+        "examples": "quintuplets, quintessence"
+    },
+    "ALI,ALTREX": {
+        "def": "alienate, altruism",
+        "examples": "another"
+    },
+    "AM,AMI": {
+        "def": "love",
+        "examples": "amorous, amity"
+    },
+    "AMBI,AMPHI": {
+        "def": "both",
+        "examples": "ambidextrous, amphibious"
+    },
+    "AMBL,AMBUL": {
+        "def": "walk",
+        "examples": "amble, ambulatory"
+    },
+    "ANIM": {
+        "def": "mind, spirit, breath",
+        "examples": "animal"
+    },
+    "ANN,ENN": {
+        "def": "year",
+        "examples": "annual, perennial"
+    },
+    "ANTE,ANT": {
+        "def": "before",
+        "examples": "antecedent, anticipate"
+    },
+    "ANTHROP": {
+        "def": "human",
+        "examples": "anthropolgy"
+    },
+    "ANTI,ANT": {
+        "def": "against, opposite",
+        "examples": "antithesis, antagonist"
+    },
+    "AUD": {
+        "def": "hear",
+        "examples": "audio"
+    },
+    "AUTO": {
+        "def": "self",
+        "examples": "autobiography"
+    },
+    "BELLI,BELL": {
+        "def": "war",
+        "examples": "rebellion, antebellum"
+    },
+    "BENE,BEN": {
+        "def": "good",
+        "examples": "benevolent, benign"
+    },
+    "BI": {
+        "def": "two",
+        "examples": "bicylce"
+    },
+    "BIBLIO": {
+        "def": "book",
+        "examples": "bibliography"
+    },
+    "BIO": {
+        "def": "life",
+        "examples": "biology"
+    },
+    "BURS": {
+        "def": "money, purse",
+        "examples": "reimburse"
+    },
+    "A,ANEX:": {
+        "def": "asymmetrical, anarchy",
+        "examples": "abnormal, avert"
+    },
+    "SACR,SANCT": {
+        "def": "holy",
+        "examples": "sacrilege, sanction"
+    },
+    "SCRIB,SCRIPT,SCRIV": {
+        "def": "write",
+        "examples": "scribe, scripture, scrivener"
+    },
+    "SE": {
+        "def": "apart, away",
+        "examples": "segregate"
+    },
+    "SEC,SECT,SEG": {
+        "def": "cut",
+        "examples": "sector, bisect, segment"
+    },
+    "SED,SID": {
+        "def": "sit",
+        "examples": "sedate, reside"
+    },
+    "SEM": {
+        "def": "seed, sow",
+        "examples": "seminar"
+    },
+    "SEN": {
+        "def": "old",
+        "examples": "senile"
+    },
+    "SENT,SENS": {
+        "def": "feel, think",
+        "examples": "sentiment, sensual"
+    },
+    "SEQU,SECU": {
+        "def": "follow",
+        "examples": "sequal, consecutive"
+    },
+    "SIM,SEM": {
+        "def": "similar, same",
+        "examples": "similarity, dissemble"
+    },
+    "SIGN": {
+        "def": "mark, sign",
+        "examples": "signal"
+    },
+    "SIN": {
+        "def": "curve",
+        "examples": "sinuous"
+    },
+    "SOL1": {
+        "def": "alone",
+        "examples": "solitude"
+    },
+    "SOL2": {
+        "def": "sun",
+        "examples": "solar"
+    },
+    "SOMN": {
+        "def": "sleep",
+        "examples": "insomnia"
+    },
+    "SON": {
+        "def": "sound",
+        "examples": "sonic"
+    },
+    "SOPH": {
+        "def": "wisdom",
+        "examples": "sophisticated"
+    },
+    "SPEC,SPIC": {
+        "def": "see, look",
+        "examples": "spectator, perspicacious"
+    },
+    "SPER": {
+        "def": "hope",
+        "examples": "prosper"
+    },
+    "SPERS,SPAR": {
+        "def": "scatter",
+        "examples": "disperse, sparse"
+    },
+    "SPIR": {
+        "def": "breathe",
+        "examples": "respiration"
+    },
+    "STRICT,STRING": {
+        "def": "bind",
+        "examples": "constrict, stringent"
+    },
+    "STRUCT,STRU": {
+        "def": "build",
+        "examples": "obstruct, structure"
+    },
+    "SUB": {
+        "def": "under",
+        "examples": "subconscious"
+    },
+    "SUMM": {
+        "def": "highest",
+        "examples": "summit"
+    },
+    "SUPER,SUR": {
+        "def": "above",
+        "examples": "supervise, surfeit"
+    },
+    "SURGE,SURRECT": {
+        "def": "rise",
+        "examples": "insurgent, resurrection"
+    },
+    "SYN,SYM": {
+        "def": "together",
+        "examples": "synthesis, sympathy"
+    },
+    "UMBR": {
+        "def": "shadow",
+        "examples": "umbrage"
+    },
+    "UNI,UN": {
+        "def": "one",
+        "examples": "unify, unanimous"
+    },
+    "URB": {
+        "def": "city",
+        "examples": "urban"
+    },
+    "VAC": {
+        "def": "empty",
+        "examples": "vacant"
+    },
+    "VAL,VAIL": {
+        "def": "value, strength",
+        "examples": "valor, avail"
+    },
+    "VEN,VENT": {
+        "def": "come",
+        "examples": "venue, convention"
+    },
+    "VER": {
+        "def": "true",
+        "examples": "verify"
+    },
+    "VERB": {
+        "def": "word",
+        "examples": "verbal"
+    },
+    "VERT,VERS": {
+        "def": "turn",
+        "examples": "avert, aversion"
+    },
+    "VICT,VINC": {
+        "def": "conquer",
+        "examples": "evict, invincible"
+    },
+    "VID,VIS": {
+        "def": "see",
+        "examples": "evident, vision"
+    },
+    "VIL": {
+        "def": "base, mean",
+        "examples": "vile"
+    },
+    "VIV,VIT": {
+        "def": "life",
+        "examples": "vivid, vital"
+    },
+    "VOC,VOK,VOW": {
+        "def": "call, voice",
+        "examples": "equivocate, invoke, avow"
+    },
+    "VOL": {
+        "def": "wish",
+        "examples": "voluntary"
+    },
+    "VOLV,VOLUT": {
+        "def": "turn, roll",
+        "examples": "revolve, convoluted"
+    },
+    "VOR": {
+        "def": "eat",
+        "examples": "carnivore"
+    },
+    "GEN": {
+        "def": "birth, class, kin",
+        "examples": "generation"
+    },
+    "GRAD,GRESS": {
+        "def": "step",
+        "examples": "gradual, egress"
+    },
+    "GRAPH,GRAM": {
+        "def": "writing",
+        "examples": "bibliography, epigram"
+    },
+    "GRAT": {
+        "def": "pleasing",
+        "examples": "gratuity"
+    },
+    "GRAV,GRIEV": {
+        "def": "heavy",
+        "examples": "gravity, grievous"
+    },
+    "GREG": {
+        "def": "crowd, flock",
+        "examples": "segregate"
+    },
+    "IN,IG,IL,IM,IR": {
+        "def": "not",
+        "examples": "insomnia, ignorant, illicit, immaculate, irregular"
+    },
+    "IN,IL,IM,IR": {
+        "def": "in, on, into",
+        "examples": "invade, illustrate, immerse, irritate"
+    },
+    "INTER": {
+        "def": "between, among",
+        "examples": "intercept"
+    },
+    "INTRA,INTR": {
+        "def": "within",
+        "examples": "intrastate, intrinsic"
+    },
+    "IT,ITER": {
+        "def": "between, among",
+        "examples": "transit, reiterate"
+    },
+    "CAD,CAS,CID": {
+        "def": "happen, fall",
+        "examples": "cadence, cascade, accident"
+    },
+    "CAP,CAPT,CEPT,CIP": {
+        "def": "take, hold, seize",
+        "examples": "capable, captive, intercept, anticipate"
+    },
+    "CAP,CIP": {
+        "def": "head",
+        "examples": "captain, precipitate"
+    },
+    "CARN": {
+        "def": "flesh",
+        "examples": "carnage"
+    },
+    "CED,CESS": {
+        "def": "yield, go",
+        "examples": "precede, cessation"
+    },
+    "CHROM": {
+        "def": "color",
+        "examples": "chrome"
+    },
+    "CHRON": {
+        "def": "time",
+        "examples": "chronic"
+    },
+    "CIDE": {
+        "def": "murder",
+        "examples": "homicide"
+    },
+    "CIRCUM": {
+        "def": "around",
+        "examples": "circumference"
+    },
+    "CLIN,CLIV": {
+        "def": "slope",
+        "examples": "incline, declivity"
+    },
+    "CLUD,CLUS,CLAUS,CLOIS": {
+        "def": "shut, close",
+        "examples": "conclude, recluse, claustrophobia, cloister"
+    },
+    "CO,COM,CON": {
+        "def": "with, together",
+        "examples": "coeducation, complaint, congenial"
+    },
+    "COGN,GNO": {
+        "def": "know",
+        "examples": "recognize, diagnosis"
+    },
+    "CONTRA": {
+        "def": "against",
+        "examples": "controversy"
+    },
+    "CORP": {
+        "def": "body",
+        "examples": "corpse"
+    },
+    "COSMO,COSM": {
+        "def": "world",
+        "examples": "cosmos, microcosm"
+    },
+    "CRAC,CRAT": {
+        "def": "rule, power",
+        "examples": "democracy, aristocrat"
+    },
+    "CRED": {
+        "def": "trust, believe",
+        "examples": "credible"
+    },
+    "CRESC,CRET": {
+        "def": "grow",
+        "examples": "crescendo, accretion"
+    },
+    "CULP": {
+        "def": "blame, fault",
+        "examples": "culprit"
+    },
+    "CURR,CURS": {
+        "def": "run",
+        "examples": "current, cursory"
+    },
+    "EGO": {
+        "def": "self",
+        "examples": "egocentric"
+    },
+    "EN,EM": {
+        "def": "in, into",
+        "examples": "enter, empathy"
+    },
+    "ERR": {
+        "def": "wander",
+        "examples": "erratic"
+    },
+    "EU": {
+        "def": "well, good",
+        "examples": "eurythmics"
+    },
+    "EX,E": {
+        "def": "out, out of",
+        "examples": "exit, elicit"
+    }
+}
