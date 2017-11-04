@@ -55,7 +55,7 @@ angular.module("lacc", ['ui.router', 'angularFileUpload'])
 		        controller: "dashboardController"
 		})
 	.state('artsRubric', {
-                        url: '/artsRubric',
+                        url: '/artsrubric',
                         templateUrl: './templates/artsRubric.html',
                         controller: "academicRubricController"
                 })
