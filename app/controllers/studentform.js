@@ -27,13 +27,13 @@ angular.module("lacc")
 	}
 ])
 
-.directive('filechange', ["$parse", function($parse) {
+.directive('filechange', ["$rootScope", function($rootScope) {
 	return function(scope, element, attrs) {
 		element.bind('change', function() {
 			var files = element[0].files;
 			var fileName = attrs.ngModel;
 			Array.from(files).forEach(function(f) {
-				var ref = storageRef.child(fileName);
+				var ref = storageRef.child(fileName + $rootScope.userr.uid);
 				ref.put(f).then(function(snapshot) {
 					scope.user[attrs.ngModel] = snapshot.downloadURL;
 				});
