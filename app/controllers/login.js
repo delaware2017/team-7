@@ -13,6 +13,7 @@ angular.module("lacc")
 			// Attach an asynchronous callback to read the data at our posts reference
 			ref.on("value", function(snapshot) {
 			  var info = snapshot.val();
+			  $rootScope.people = info;
 			  $rootScope.userData = info[data.uid];
 			  $state.go("homepage");
 			}, function (errorObject) {
