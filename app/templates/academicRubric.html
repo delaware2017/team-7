@@ -87,18 +87,6 @@
       </tr>
     </tbody>
   </table>
- <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control1" id="totalScore">
+ <button type = "button" ng-click= "sumInputs()" >Total Score: </button><input type="text" class="form-control1" id="totalScore">
 </div>
-
-<script type="text/javascript">
-window.sumInputs = function() {
-    var result = document.getElementById('totalScore');
-    var sum = 0;
-    $('.form-control').each (function() {
-        var q = ($(this).val());
-        sum  = sum + parseInt(q);  
-      })
-    result.value = (sum);
-  }
-    </script>
 

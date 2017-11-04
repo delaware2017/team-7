@@ -100,10 +100,10 @@
      
     </tbody>
   </table>
-  <a href="javascript:sumInputs()">Total Score: </a><input type="text" class="form-control1" id="totalScore">
+  <a ng-click="sumInputs()">Total Score: </a><input type="text" class="form-control1" id="totalScore">
 </div>
 <script type="text/javascript">
-window.sumInputs = function() {
+var sumInputs = function() {
     var result = document.getElementById('totalScore');
     var sum = 0;
     $('.form-control').each (function() {
