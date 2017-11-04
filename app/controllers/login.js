@@ -9,14 +9,16 @@ angular.module("lacc")
 		firebase.auth().signInWithEmailAndPassword(email, password)
 		.then(function(data) {
 			$rootScope.user = data;
-			database().ref('users/' + data.uid)
-			.on('value', function(snapshot) {
-			  var user_type = (snapshot.val() && snapshot.val().user_type);
-			  console.log(user_type);
-			})
-			.catch(function(err) {
-				console.error(err);
+			var ref = database.ref("users");
+			// Attach an asynchronous callback to read the data at our posts reference
+			ref.on("value", function(snapshot) {
+			  var info = snapshot.val();
+			  $rootScope.userData = info[data.uid];
+
+			}, function (errorObject) {
+			  console.log("The read failed: " + errorObject.code);
 			});
+
 		})
 		.catch(function(error) {
 		  // Handle Errors here.
