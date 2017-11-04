@@ -8,7 +8,7 @@ angular.module("lacc")
 		var password = $scope.user.password;
 		firebase.auth().signInWithEmailAndPassword(email, password)
 		.then(function(data) {
-			$rootScope.user = data;
+			$rootScope.userr = data;
 			window.localStorage.setItem("userinfo", JSON.stringify(data));
 			console.log(data);
 			var ref = database.ref("users");
