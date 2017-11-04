@@ -1,4 +1,4 @@
-angular.module("lacc", ['ui.router'])
+angular.module("lacc", ['ui.router', 'angularFileUpload'])
 
 .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider
@@ -42,7 +42,7 @@ angular.module("lacc", ['ui.router'])
 		.state('dashboard', {
 			url: '/dashboard',
 			templateUrl: './templates/dashboard.html',
-			controller: "dashboardControl"
+			controller: "dashboardController"
 		})
 		.state('academicRubric', {
 		        url: '/academicrubric',
@@ -53,7 +53,10 @@ angular.module("lacc", ['ui.router'])
 }])
 
 .run(['$rootScope', function($rootScope) {
-
+	var userinfo = window.localStorage.getItem("userinfo");
+	if(userinfo) {
+		$rootScope.userr = JSON.parse(userinfo);
+	}
 }])
 
 .controller('main', ['$scope', "$state", "$rootScope", function($scope, $state, $rootScope) {

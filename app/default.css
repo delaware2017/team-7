@@ -3,7 +3,7 @@
     margin-right: auto !important;
 }
 body {
-  padding-top: 50px;
+  padding: 50px;
   overflow: hidden;
 }
 ui-view {
@@ -326,4 +326,6 @@ input::-webkit-input-placeholder {
         width: 25%;
         margin: 0;
     }
+
+    .
 }

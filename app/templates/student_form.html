@@ -1,22 +1,25 @@
-  <div>
+<div ng-show="studentform.$invalid" class="text-danger">Incomplete</div>
+<div ng-show="studentform.$valid" class="text-success">Complete</div>
+
+  <div ng-form name="studentform">
   <div class="form-group">
     <label for="personalStatement">Personal Statement</label>
-    <textarea class="form-control" ng-model="user.personalStatement" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Text Here"></textarea>
+    <textarea required class="form-control" ng-model="user.personalStatement" id="exampleFormControlTextarea1" rows="5" placeholder="Enter Text Here"></textarea>
   </div>
 
   <div>
     <label for="Resume">Resume</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.resume">
+    <input required type="file" filechange class="form-control-file filereader" ng-model="resume">
   </div>
 
   <div class="form-group">
     <label for="gpa">Enter GPA</label>
-    <input type="text" ng-model="user.gpa" class="form-control" id="gpa">
+    <input required type="text" ng-model="user.gpa" class="form-control" id="gpa">
   </div>
 
   <div class="form-group">
     <label for="Class Rank">Enter Class Rank</label>
-    <input type="text" ng-model="user.classRank" class="form-control" id="classRank">
+    <input required type="text" ng-model="user.classRank" class="form-control" id="classRank">
   </div>
 
   <div class="form-group">
@@ -31,7 +34,7 @@
 
   <div class="form-group">
       <label for="sat">Enter SAT score</label>
-      <input type="text" ng-model="user.sat" class="form-control" id="sat">
+      <input required type="text" ng-model="user.sat" class="form-control" id="sat">
   </div>
 
   <div class="form-group">
@@ -49,26 +52,17 @@
     <button type="submit" class="btn btn-primary" ng-click="add()">Submit</button>
   <div>
     <label for="Visual Art Files">Visual Art Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.visualArtsFile1">
-
+     <input required type="file" filechange class="form-control-file" multiple ng-model="visualArtsFile" />
   <div>
-    <label for="Visual Art Files">Visual Art Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.visualArtsFile2">
-  </div>
-
-  <div>
-    <label for="Visual Art Files">Visual Art Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.visualArtsFile3">
-  </div>
 
   <div>
     <label for="Performing Art Files">Performing Art Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.performingArtFile">
+    <input type="file" filechange class="form-control-file filereader" ng-model="performingArtFile">
   </div>
 
    <div class="form-group">
       <label for="PerformingArtsLink">Enter Link to Performance</label>
-      <input type="text" ng-model="user.performingArtLink" class="form-control" id="performingArtLink">
+      <input required type="text" ng-model="user.performingArtLink" class="form-control" id="performingArtLink">
   </div>
 
   <div class="form-group">
@@ -78,13 +72,8 @@
 
   <div>
     <label for="Science Technology Files">Science Technology Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.ScienceTechnologyFile1">
-  </div>
-
-  <div>
-    <label for="Science Technology Files">Science Technology Files</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.ScienceTechnologyFile2">
-  </div>
+	 <input required type="file" filechange class="filereader sciencetech" multiple ng-model="ScienceTechnologyFile" />
+	  </div>
 
   <div class="form-group">
       <label for="Community Service">List places of service and why you served there</label>
@@ -93,7 +82,7 @@
 
   <div>
     <label for="Community Service">Community Service Form</label>
-    <input type="file" class="form-control-file filereader" ng-model="user.communityServiceForm">
+    <input required type="file" filechange class="form-control-file filereader" ng-model="communityServiceForm">
   </div>
 
   <div class="form-group">
@@ -101,5 +90,9 @@
       <textarea class="form-control" ng-model="user.atheletics" id="atheletics" rows="5" placeholder="Enter Atheletics Achievements"></textarea>
   </div>
 
+
+	<div>
+		<button class="btn btn-primary" ng-click="save()">Save</button>
+	</div>
 
 </div>
