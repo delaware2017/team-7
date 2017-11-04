@@ -1,6 +1,3 @@
-btn.onclick = function() {
-        modal.style.display = “block”;
-    }
 
 function checkCredentials() {
 
@@ -23,3 +20,11 @@ if(status==3) {
 }
 
 }
+
+function submitform() {
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "file");
+    document.body.appendChild(x);
+    
+}
+
