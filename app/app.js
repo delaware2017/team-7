@@ -53,7 +53,7 @@ angular.module("lacc", ['ui.router', 'angularFileUpload'])
 }])
 
 .run(['$rootScope', function($rootScope) {
-	var userinfo = window.localStorage.get("userinfo");
+	var userinfo = window.localStorage.getItem("userinfo");
 	if(userinfo) {
 		$rootScope.user = userinfo;
 	}
