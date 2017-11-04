@@ -15,7 +15,7 @@ angular.module("lacc")
 		  }
 	  }
 	  console.log(userss);
-	  $rootScope.listofusers = userss;
+	  $rootScope.listofusers = info;
 	  $scope.$apply();
 	}, function (errorObject) {
 	  console.log("The read failed: " + errorObject.code);
