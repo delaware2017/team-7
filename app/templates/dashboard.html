@@ -1,12 +1,12 @@
 <div>
-	
+
 <table class="table">
 	<tr>
 		<th>Name</th>
 		<th>Category</th>
 		<th>Score</th>
 	</tr>
-	<tr ng-repeat="user in listofusers">
+	<tr ng-repeat="user in listofusers" ui-sref="">
 		<td>{{user.firstname + " " + user.lastname }}</td>
 		<td>{{user.category || "no category"}}</td>
 		<td>{{user.score || "unscored"}}</td>

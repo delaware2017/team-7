@@ -1,7 +1,7 @@
 var database = firebase.database();
 
 angular.module("lacc")
-
+// When the user logs in it adds them to the database
 .controller('loginController', ['$scope', "$state", "$rootScope", "$stateParams", function($scope, $state, $rootScope, $stateParams) {
     $scope.login = function() {
 		var email = $scope.user.email;
@@ -41,7 +41,7 @@ angular.module("lacc")
 	};
 
 	$scope.signupType = $stateParams.type;
-
+	// for first time users who do not have an account
 	$scope.signup = function() {
 		var email = $scope.user.email;
 		var firstname = $scope.user.firstname || "Test";
