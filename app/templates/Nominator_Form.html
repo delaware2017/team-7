@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<header>Student Information</header>
+<body>
+<p>Please input the student information:</p>
+
+<form id="frm1" action="/action_page.php">
+	First name: <br>
+  	<input type="text" name="fname"><br>
+  	Last name: <br>
+  	<input type="text" name="lname"><br><br>
+  	Student Email: <br>
+  	<input type="text" name="email"><br>
+  	Student Phone: <br>
+  	<input type="text" name="phone"><br><br>
+</form>
+
+<form action="/action_page.php" method="get">
+	Is this student Hispanic: <br>
+ 	<input type="checkbox" name="yes" value="yes_hispanic"> Yes<br>
+ 	<input type="checkbox" name="no" value="not_hispanic"> No<br><br>
+</form>
+
+<p>Award Categories:</p>
+<select>
+	Select all that apply:
+	<option value="academics">Academic Excellence</option>
+	<option value="arts">the Arts</option>
+	<option value="athletics">Athletics</option>	
+	<option value="stem">Science Technology Engineering and Math</option>
+	<option value="community">School/Community Service</option>
+</select>
+
+<p>School Information:</p>
+<form id="frm1" action="/action_page.php">
+	State:
+	<input type="text" name="school"><br>
+	District:
+	<input type="text" name="school"><br>
+	Name: <!-- Try to have a drop down menu -->
+	<input type="text" name="school"><br>
+</form>
+
+<script>
+function getInput() {
+    document.getElementById("frm1").submit();
+}
+</script>
+
+</body>
+</html>
