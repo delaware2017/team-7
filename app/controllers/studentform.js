@@ -1,3 +1,5 @@
+var storageRef = firebase.storage().ref();
+
 angular.module("lacc")
 
 .controller("studentFormController", [
@@ -28,9 +30,14 @@ angular.module("lacc")
 				var r = new FileReader();
 				r.onloadend = function(e) {
 					var data = e.target.result;
-					//send your binary data via $http or $resource or do anything else with it
+
+					var mountainsRef = storageRef.child('mountains.jpg');
 					console.log(data);
 				};
+
+				ref.put(file).then(function(snapshot) {
+				  console.log('Uploaded a blob or file!');
+				});
 
 				r.readAsBinaryString(f);
 			});
