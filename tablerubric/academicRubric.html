@@ -104,20 +104,18 @@
 </div>
 <script type="text/javascript">
 window.sumInputs = function() {
-    var inputs = document.getElementsById('score'),
+    var arr = document.getElementById('score'),
         result = document.getElementById('totalScore'),
         sum = 0;            
-
-    for(var i=0; i<inputs.length; i++) {
-        var ip = inputs[i];
-
-        if (ip.name && ip.name.indexOf("totalScore") < 0) {
-            sum += parseInt(ip.value) || 0;
+    for(var i= 0; i< arr.length; i++) {
+        var ip = arr[i];
+        tot += parseInt(ip.value);
         }
 
     }
 
-    result.value = total;
+    result.value = sum;
+    console.log(result.value);
 }
 /*function findTotal(){
     var arr = document.getElementById('score');
