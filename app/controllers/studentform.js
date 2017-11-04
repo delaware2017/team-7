@@ -20,6 +20,7 @@ angular.module("lacc")
 	return function(scope, element, attrs) {
 		element.bind('change', function() {
 			var files = element[0].files;
+			var fileName = attrs.ngModel;
 			Array.from(files).forEach(function(f) {
 				var r = new FileReader();
 				r.onloadend = function(e) {
@@ -29,7 +30,7 @@ angular.module("lacc")
 					console.log(data);
 				};
 
-				var ref = storageRef.child()
+				var ref = storageRef.child(fileName);
 				ref.put(file).then(function(snapshot) {
 				  console.log('Uploaded a blob or file!');
 				});
