@@ -23,11 +23,17 @@ angular.module("lacc")
 
 	$scope.signup = function() {
 		var email = $scope.user.email;
+		var firstname = $scope.user.firstname;
+		var lastname = $scope.user.lastname;
 		var password = $scope.user.password;
 		var user_type = $stateParams.type ?  $stateParams.type+"s" : $scope.user.user_type;
 		firebase.auth().createUserWithEmailAndPassword(email, password)
 			.then(function() {
-				database.ref('user_types/' + user_type).push(email);
+				database.ref('users/' + email).set({
+					firstname: firstname,
+					lastname: lastname,
+					user_type: user_type
+				});
 				console.log("done");
 			})
 			.catch(function(error) {
@@ -40,3 +46,14 @@ angular.module("lacc")
 }])
 
 ;
+
+
+///
+var nominees = {
+	student: []
+};
+
+var student = {
+	profile: 'sdfs',
+	profile_status: 'asdf'
+};
