@@ -1,0 +1,23 @@
+<!-- <button class="btn btn-default" ng-click="addDef()">Yo</button>
+<input type="text" ng-model="ccurrentWr" class="form-control">
+<input type="text" ng-model="ccurrentW" class="form-control"> -->
+
+<div class="container">
+    <div class="row">
+        <ol>
+            <li class="term-verbose" ng-repeat="term in DESIRED_DEFS | reverse | filter:rootFilter | filter:bonus">
+                <h3><a ng-href="http://dictionary.reference.com/browse/{{term.word}}" target="_blank">{{term.word | Capitalize}}</a><span ng-if="term.roots.length > 2" class="glyphicon glyphicon-star"></span></h3>
+                <span class="wrt-def" ng-repeat="rt in term.roots">
+                    <b>{{ rt.root }}</b> {{ rt.rootDef}}
+                </span>
+                <p class="term-def">{{ term.defintion }}</p>
+                <p class="term-sentence">{{ term.sentence }}</p>
+                <span class="glyphicon glyphicon-remove" ng-click="remove(term.word)">
+            </li>
+
+        </ol>
+    </div>
+</div>
+
+
+<!-- You cannot copy bootstraps star, so insert this if you need to copy into google docs!★ -->

@@ -1,0 +1,329 @@
+.row {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+body {
+  padding-top: 50px;
+  overflow: hidden;
+}
+ui-view {
+    overflow-y: auto;
+    height: 100%;
+    display: block;
+}
+.navbar-collapse {
+  text-align: center;
+}
+.navbar-nav {
+  display: inline-block;
+  float: none;
+}
+.navbar-nav.navbar-right {
+  display: inline-block;
+  float: right!important;
+}
+.navbar-nav.navbar-middle {
+  width: 330px;
+  display: block;
+  margin: 0 auto;
+}
+.navbar-nav.navbar-middle li input {
+  margin-top: 8px;
+}
+.navbar-nav.navbar-left {
+    display: block;
+    float: left;
+    height: 50px;
+}
+.navbar-nav.navbar-left>li>a {
+    padding: 0;
+    margin-top: 8px;
+}
+.navbar-nav.navbar-left .glyphicon {
+    font-size: 20px;
+    margin-top: 6px;
+    cursor: pointer;
+}
+.navbar-nav.navbar-left li>a {
+    margin-right: 15px;
+}
+.navbar-nav.navbar-left li:last-child a {
+    margin-right: 0;
+}
+.navbar-nav.navbar-left li {
+    height: 100%;
+}
+.navbar-inverse .navbar-nav>.open>a {
+    background-color: #3C0000;
+    padding-bottom: 15px;
+    margin-top: 0;
+    padding-top: 9px;
+}
+.navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: #230000;
+}
+.dropdown-menu>li>a {
+    cursor: pointer;
+}
+.dropdown-menu>li>span {
+    cursor: pointer;
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.42857143;
+    color: #333;
+    white-space: nowrap;
+}
+
+/** COLOR OVERRIDE **/
+nav.navbar.navbar-inverse.navbar-fixed-top {
+    background-color: #4A0000;
+    border-color: #4A0000;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover {.navbar-inverse.navbar-nav>.active>
+    a, .navbar-inverse .navbar-nav>.active>a: focus, .navbar-inverse .navbar-nav>.active>a:hover;.navbar-inverse.navbar-nav>.active>
+    a, .navbar-inverse .navbar-nav>.active>a: focus, .navbar-inverse .navbar-nav>.active>a:hover;
+    background-color: 3c0000;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #EDEDED;
+}
+/**********/
+
+.loading {
+    width: 550px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 15px;
+    background: firebrick;
+}
+.loading h2 {
+  color: white;
+  margin: 0;
+}
+
+.tile-container {
+    margin: 0 auto;
+    width: 1450px;
+}
+
+.tile {
+    height: 150px;
+    padding: 20px;
+    padding-top: 0;
+    width: 260px;
+    float: left;
+    display: block;
+    background: firebrick;
+    margin: 15px;
+    color: #EAEAEA;
+}
+
+.tile h3 {
+    background: #5A0000;
+    margin-left: -20px;
+    margin-top: 0;
+    margin-right: -20px;
+    padding: 10px;
+    line-height: 25px;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.tile h3.smaller {
+    font-size: 17px;
+}
+.tile h3.smallest {
+    font-size: 9px;
+}
+
+.tile ul {
+    display: inline-block;
+}
+
+.tile:hover {
+    box-shadow: 4px 5px 8px #B9B9B9;
+    background: #5A0000;
+    cursor: pointer;
+}
+
+
+/** FOR DEFINTION SECTION **/
+.add-example {
+    margin: 10px 0;
+}
+
+.def-container {
+    width: 1440px;
+}
+
+.def-container .tile {
+    height: 260px;
+    width: 150px;
+    overflow: hidden;
+}
+.def-container ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+.def-container ul li {
+    font-size: 11px;
+}
+
+/** FOR DEFINTIONS DEFINTIONS SCREEN **/
+.term-def {
+    font-style: italic;
+    font-size: 13px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.term-sentence {
+}
+
+.term-verbose {
+    margin-bottom: 10px;
+    position: relative;
+}
+.term-verbose:hover h3 {
+    border-bottom-color: #B9B9B9;}
+
+.term-verbose h3 {
+    margin-bottom: 2px;
+    border-bottom: 1px solid #F1F1F1;
+}
+.term-verbose span.glyphicon.glyphicon-star {
+    font-size: 18px;
+    margin-left: 6px;
+}
+.term-verbose .glyphicon-remove {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    padding-right: 18px;
+    padding-bottom: 30px;
+    opacity: 0.1;
+}
+.term-verbose>h3>a {
+    color: black;
+}
+.term-verbose>h3>a:hover {
+    text-decoration: none;
+}
+.glyphicon-remove:hover {
+    color: firebrick;
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none;
+}
+
+/*** INPUT FIELD **/
+input[type=search] {
+	background: #ededed url(img/search-icon.png) no-repeat 9px center;
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+	width: 55px;
+	border-radius: 10em;
+	width: 330px;
+    transition: all 0.3s;
+}
+input[type=search]:focus {
+    background-color: #fff;
+    border-color: #CECECE;
+    box-shadow: 0 0 5px rgba(148, 148, 148, 0.5);
+}
+
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+@media screen and (max-width: 1500px) {
+
+    .tile-container {
+        width: 875px;
+    }
+
+    .def-container {
+        width: 1080px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .def-container {
+        width: 924px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .navbar-nav.navbar-middle {
+        display: inline-block;
+        float: left;
+        margin-left: 15px;
+    }
+
+}
+
+
+
+/* HAMBURGER SHOWS */
+@media screen and (max-width: 768px) {
+    .navbar-nav {
+      display: block;
+      float: none;
+    }
+    .navbar-nav.navbar-right {
+       display: block;
+       float: none!important;
+    }
+    .navbar-nav.navbar-middle {
+        float: left;
+        margin-left: 15px;
+        display: none;
+    }
+
+}
+
+/* widths of containers will be the (# of tiles)*(width of tile + 2 * margin of tile) */
+@media screen and (max-width: 900px) {
+    .tile {
+        width: 100%;
+        margin: 0;
+    }
+
+    .tile-container {
+        width: inherit;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    .def-container {
+        width: 100%;
+        margin: 0;
+    }
+    .def-container .tile {
+        width: 25%;
+        margin: 0;
+    }
+}
