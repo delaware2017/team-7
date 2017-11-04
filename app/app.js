@@ -34,6 +34,8 @@ angular.module("lacc", ['ui.router'])
 			templateUrl: './templates/grader.html',
 			controller: "graderController"
 		})
+		;
+}])
 
 .run(['$rootScope', function($rootScope) {
 
