@@ -54,6 +54,11 @@ angular.module("lacc", ['ui.router', 'angularFileUpload'])
 		        templateUrl: './templates/ratestudent.html',
 		        controller: "graderController"
 		})
+	.state('artsRubric', {
+                        url: '/artsrubric',
+                        templateUrl: './templates/artsRubric.html',
+                        controller: "academicRubricController"
+                })
 		;
 }])
 
