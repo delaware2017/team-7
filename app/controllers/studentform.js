@@ -10,7 +10,6 @@ angular.module("lacc")
 
 		$scope.save = function(){
 			console.log($scope.user);
-			var x = {"personalStatement":"gg","gpa":"4","classRank":"4","classesTaken":"g","honorsClassesTaken":"g","sat":"2200","academicAwards":"g","HonorSociety":"g","performingArtLink":"g","ScienceTechnologyAwards":"g","communityService":"g","atheletics":"g"};
 		};
 
 		$scope.addFile = function(fileName) {
@@ -29,7 +28,7 @@ angular.module("lacc")
 
 .directive('filechange', ["$parse", function($parse) {
 	return function(scope, element, attrs) {
-		var scopedata = $scope.user[attrs.ngModel];
+		var scopedata = scope.user[attrs.ngModel];
 		element.bind('change', function() {
 			var files = element[0].files;
 			var fileName = attrs.ngModel;
