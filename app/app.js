@@ -25,23 +25,15 @@ angular.module("lacc", ['ui.router'])
         	templateUrl: './templates/Nominator_Form.html',
             controller: 'nominatorController'
         })
-<<<<<<< HEAD
-           .state('firstpage',{
+        .state('firstpage',{
         	url: '/firstpage',
         	templateUrl: './templates/firstpage.html'
         })
-
-
-
-=======
-	.state('grader', {
-	url: '/graderpage',
-	templateUrl: './templates/grader.html',
-	controller: "graderController"
-})
->>>>>>> 8870968a82bea7a94ad581d477958eb6e7dd4165
-        ;
-}])
+		.state('grader', {
+			url: '/graderpage',
+			templateUrl: './templates/grader.html',
+			controller: "graderController"
+		})
 
 .run(['$rootScope', function($rootScope) {
 
