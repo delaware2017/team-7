@@ -33,23 +33,10 @@ angular.module("lacc")
 			var files = element[0].files;
 			var fileName = attrs.ngModel;
 			Array.from(files).forEach(function(f) {
-				var r = new FileReader();
-				r.onloadend = function(e) {
-					var data = e.target.result;
-
-					var mountainsRef = storageRef.child('mountains.jpg');
-					console.log(data);
-				};
-
-<<<<<<< HEAD
-=======
 				var ref = storageRef.child(fileName);
->>>>>>> 2bd3629308f765c5f4229cf2ad50c2ea48425d7d
-				ref.put(file).then(function(snapshot) {
+				ref.put(f).then(function(snapshot) {
 				  console.log('Uploaded a blob or file!');
 				});
-
-				r.readAsBinaryString(f);
 			});
 		});
 	};
