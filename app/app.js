@@ -24,7 +24,11 @@ angular.module("lacc", ['ui.router'])
         	url: '/firstpage',
         	templateUrl: './templates/firstpage.html'
         })
-
+	.state('grader', {
+	url: '/graderpage',
+	templateUrl: './templates/grader.html',
+	controller: "graderController"
+})
         ;
 }])
 
